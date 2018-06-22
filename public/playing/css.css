@@ -1,0 +1,9 @@
+@font-face {
+   font-family: "Aldo";
+   src: url(AldoTheApache.ttf) format("truetype");
+   }
+
+body {background-color: black; color: aliceblue;}
+#album {opacity: 0; width: 640px; margin-left: 20px; margin-top:20px;}
+#words {position: absolute; right: 40px; top: 40px; width: 660px; font-size: 35px; font-family: 'Georgia';}
+.details {font-family: 'Aldo'; font-size: 40px; text-align: center; width: 640px; margin-top: 20px; margin-bottom: -15px;}

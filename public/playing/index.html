@@ -4,25 +4,14 @@
   <title>
     Spotifacts
   </title>
+<script type="text/javascript" src="jq.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
 <script type="text/javascript" src="socket.js"></script>
-<script>
-var socket = io.connect('http://localhost:3000');
-var token = window.location.search.substring(6);
-socket.emit('newPlayer', token);
-
-setInterval(function (){
-socket.emit('123', 'ping');
-console.log('pinged server');
-}, 5000);
-
-socket.on('currentlyPlaying', function(data){
-  document.getElementsByTagName('body')[0].innerHTML = data;
-});
-
-</script>
-
+<script type="text/javascript" src="player.js"></script>
+<link rel="stylesheet" href="css.css" />
 </head>
 <body>
-LOGGED IN BABBY
+<div id="album"></div>
+<div id="words"></div>
 </body>
 </html>
